@@ -49,13 +49,11 @@ pub fn make_yitizi_json(yitizi_groups: Vec<String>) -> HashMap<char, String> {
             }
         }
     }
-    let json_obj = obj
-        .into_iter()
+    obj.into_iter()
         .map(|(k, v)| {
             let mut v_str = v.into_iter().collect::<Vec<char>>();
             v_str.sort();
             (k, v_str.into_iter().collect())
         })
-        .collect();
-    json_obj
+        .collect()
 }
