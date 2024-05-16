@@ -2,7 +2,7 @@ use std::{error::Error, fs::write};
 
 use build_lib::*;
 
-const OUTPUT_PATH: &str = "./src/yitizi.json";
+const OUTPUT_PATH: &str = "./yitizi/src/yitizi.json";
 
 fn main() -> Result<(), Box<dyn Error>> {
     println!("cargo::rerun-if-changed={}", DATA_DIR);
