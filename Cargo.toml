@@ -2,6 +2,13 @@
 name = "yitizi"
 version = "0.1.0"
 edition = "2021"
+readme = "README.md"
+license = "CC0-1.0"
+description = "異體字查詢 Get variant Chinese characters"
+keywords = ["chinese", "chinese-character", "natural-language-processing"]
+categories = ["text-processing", "command-line-utilities"]
+repository = "https://github.com/edward-martyr/yitizi-rs"
+build = "build.rs"
 
 [dependencies]
 serde_json = "1.0.117"
